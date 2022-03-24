@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const MovieCard = ({ id, posterPath, title }) => {
+const MovieCard = ({ posterPath, title }) => {
     return (
         <div>
             <h3>{title}</h3>

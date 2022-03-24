@@ -1,18 +1,21 @@
-import React, { Component } from 'react';
-import MovieCard from './src/components/MovieCard/MovieCard.js';
-import movieData from '../../movies-data';
+import React from 'react';
+import MovieCard from '../MovieCard/MovieCard';
 
-const Movies = ( {movieData} ) => {
-    const movieCards = movieData.map(movie => {
+const Movies = ( {movieSet} ) => {
+    const movies = movieSet[0].movies
+    const movieCards = movies.map(movie => {
         return (
             <MovieCard 
-                id={movie.id}
+                // id={movie.id}
+                key={movie.id}
                 title={movie.title}
                 posterPath={movie.poster_path}
+                // backdropPath={movie.backdrop_path}
+                // averageRating={movie.average_rating}
+                // releaseDate={movie.release_date}
             />
         )
     })
-
     return (
         <div>
             {movieCards}
