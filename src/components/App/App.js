@@ -7,12 +7,22 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      movies: [ {movieData} ],
+      movies: [ ],
       error: ''
     }
   }
 
-  
+  render() {
+    return(
+      <main>
+        <header>
+          <h1>Rancid Tomatillos</h1>
+        </header>
+        {/* <Movies /> */}
+      </main>
+    )
+  }
+
 }
 
 export default App;
