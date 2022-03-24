@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import movieData from '../../movies-data';
+// import movieData from '../../movies-data';
 
 class App extends Component {
   constructor() {
