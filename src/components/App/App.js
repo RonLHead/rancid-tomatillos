@@ -12,13 +12,17 @@ class App extends Component {
     }
   }
 
+  handleChange = (event) => {
+    this.setState({search: event.target.value});
+  }
+
   render() {
     return( 
       <main>
         <nav>
           <h1>Rancid Tomatillos</h1>
         </nav>
-        <p className="sub-heading">The <em>second</em> most trusted measurer of movie quality!</p>
+        <h2 className="sub-heading">The <em>second</em> most trusted measurer of movie quality!</h2>
         <Movies 
           movieSet={this.state.movies}
         />

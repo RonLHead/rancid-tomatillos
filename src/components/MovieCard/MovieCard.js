@@ -1,10 +1,13 @@
 import React from 'react';
 import './MovieCard.css';
 
-const MovieCard = ({ posterPath }) => {
+const MovieCard = ({ title, posterPath }) => {
     return (
-        <div >
-            <img src={posterPath} alt="Movie poster"></img>
+        <div>
+            <div className="card">
+                <img src={posterPath} alt="Movie poster"></img>
+                <p>{title}</p>
+            </div>
         </div>
     )
 }
