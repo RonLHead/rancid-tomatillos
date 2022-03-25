@@ -6,7 +6,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//pq0JSpwyT2URytdFG0euztQPAyR.jpg",
         "title": "Money Plane",
         "average_rating": 6.666666666666667,
-        "release_date": "2020-09-29"
+        "release_date": "2020-09-29",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 337401,
@@ -14,7 +20,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//zzWGRw277MNoCs3zhyG3YmYQsXv.jpg",
         "title": "Mulan",
         "average_rating": 4.909090909090909,
-        "release_date": "2020-09-04"
+        "release_date": "2020-09-04",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 718444,
@@ -22,7 +34,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//x4UkhIQuHIJyeeOTdcbZ3t3gBSa.jpg",
         "title": "Rogue",
         "average_rating": 5.428571428571429,
-        "release_date": "2020-08-20"
+        "release_date": "2020-08-20",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 539885,
@@ -30,7 +48,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//54yOImQgj8i85u9hxxnaIQBRUuo.jpg",
         "title": "Ava",
         "average_rating": 5.111111111111111,
-        "release_date": "2020-07-02"
+        "release_date": "2020-07-02",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 581392,
@@ -38,7 +62,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//gEjNlhZhyHeto6Fy5wWy5Uk3A9D.jpg",
         "title": "Peninsula",
         "average_rating": 7,
-        "release_date": "2020-07-15"
+        "release_date": "2020-07-15",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 726739,
@@ -46,7 +76,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//t22fWbzdnThPseipsdpwgdPOPCR.jpg",
         "title": "Cats & Dogs 3: Paws Unite",
         "average_rating": 7.4,
-        "release_date": "2020-10-02"
+        "release_date": "2020-10-02",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 627290,
@@ -54,7 +90,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//pGqBDYycGWsMYc57sYv5M9GAQoW.jpg",
         "title": "Antebellum",
         "average_rating": 6.375,
-        "release_date": "2020-09-02"
+        "release_date": "2020-09-02",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 613504,
@@ -62,7 +104,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//r5srC0cqU36n38azFnCyReEksiR.jpg",
         "title": "After We Collided",
         "average_rating": 5.25,
-        "release_date": "2020-09-02"
+        "release_date": "2020-09-02",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 659986,
@@ -70,7 +118,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//xUUtcxWC6H48UCrpRwwSPQz69XC.jpg",
         "title": "The Owners",
         "average_rating": 5.285714285714286,
-        "release_date": "2020-09-04"
+        "release_date": "2020-09-04",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 632618,
@@ -78,7 +132,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//cVdYaAQmd5DZNdo0KFJruz7JpUs.jpg",
         "title": "The Crimes That Bind",
         "average_rating": 4.857142857142857,
-        "release_date": "2020-08-20"
+        "release_date": "2020-08-20",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 446893,
@@ -86,7 +146,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//qsxhnirlp7y4Ae9bd11oYJSX59j.jpg",
         "title": "Trolls World Tour",
         "average_rating": 5.5,
-        "release_date": "2020-03-12"
+        "release_date": "2020-03-12",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 508439,
@@ -94,7 +160,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//xFxk4vnirOtUxpOEWgA1MCRfy6J.jpg",
         "title": "Onward",
         "average_rating": 6.4,
-        "release_date": "2020-02-29"
+        "release_date": "2020-02-29",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 479259,
@@ -110,7 +182,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//9guoVF7zayiiUq5ulKQpt375VIy.jpg",
         "title": "My Hero Academia: Heroes Rising",
         "average_rating": 5,
-        "release_date": "2019-12-20"
+        "release_date": "2019-12-20",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 531876,
@@ -118,7 +196,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//n1RohH2VoK1CdVI2fXvcP19dSlm.jpg",
         "title": "The Outpost",
         "average_rating": 3.8333333333333335,
-        "release_date": "2020-06-24"
+        "release_date": "2020-06-24",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 499932,
@@ -126,7 +210,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//rUeqBuNDR9zN6vZV9kpEFMtQm0E.jpg",
         "title": "The Devil All the Time",
         "average_rating": 4.666666666666667,
-        "release_date": "2020-09-11"
+        "release_date": "2020-09-11",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 413518,
@@ -134,7 +224,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//AdqOBPw4PdtzOcfEuQuZ8MNeTKb.jpg",
         "title": "Pinocchio",
         "average_rating": 4.75,
-        "release_date": "2019-12-19"
+        "release_date": "2019-12-19",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 577922,
@@ -142,7 +238,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//wzJRB4MKi3yK138bJyuL9nx47y6.jpg",
         "title": "Tenet",
         "average_rating": 5.5,
-        "release_date": "2020-08-22"
+        "release_date": "2020-08-22",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 619592,
@@ -150,7 +252,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//eIqyISB5j99OSRZUuvdN9g2bBsS.jpg",
         "title": "Force of Nature",
         "average_rating": 4.4,
-        "release_date": "2020-07-02"
+        "release_date": "2020-07-02",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 501979,
@@ -158,7 +266,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//oazPqs1z78LcIOFslbKtJLGlueo.jpg",
         "title": "Bill & Ted Face the Music",
         "average_rating": 5,
-        "release_date": "2020-08-27"
+        "release_date": "2020-08-27",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 340102,
@@ -166,7 +280,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//eCIvqa3QVCx6H09bdeOS8Al2Sqy.jpg",
         "title": "The New Mutants",
         "average_rating": 4.2,
-        "release_date": "2020-08-26"
+        "release_date": "2020-08-26",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 605499,
@@ -174,7 +294,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//48OhmVjmjqhB1TrevTMKwKUDetU.jpg",
         "title": "Monsoon",
         "average_rating": 5.25,
-        "release_date": "2020-09-25"
+        "release_date": "2020-09-25",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 737568,
@@ -182,7 +308,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//9pHxv7TX0jOKNgnGMDP6RJ2m1GL.jpg",
         "title": "The Doorman",
         "average_rating": 5.75,
-        "release_date": "2020-10-01"
+        "release_date": "2020-10-01",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 400160,
@@ -206,7 +338,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//ccwPF5jN09S4Cz7u6qs3T2yKOpO.jpg",
         "title": "Away",
         "average_rating": 4.2,
-        "release_date": "2019-11-15"
+        "release_date": "2019-11-15",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 617708,
@@ -214,7 +352,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//oj9pEWQq5higRzKWiE8f0d5hBSb.jpg",
         "title": "La llorona",
         "average_rating": 4.5,
-        "release_date": "2020-01-22"
+        "release_date": "2020-01-22",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 528085,
@@ -222,7 +366,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//5UkzNSOK561c2QRy2Zr4AkADzLT.jpg",
         "title": "2067",
         "average_rating": 5.166666666666667,
-        "release_date": "2020-10-01"
+        "release_date": "2020-10-01",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 610201,
@@ -238,7 +388,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//zRc6SG8V8WTTDrmZ78PgqjwYqoN.jpg",
         "title": "The Secret: Dare to Dream",
         "average_rating": 5.6,
-        "release_date": "2020-04-16"
+        "release_date": "2020-04-16",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 737173,
@@ -246,7 +402,13 @@ const movieData = {
         "backdrop_path": "https://www.esm.rochester.edu/uploads/NoPhotoAvailable.jpg",
         "title": "Maratón After",
         "average_rating": 4.333333333333333,
-        "release_date": "2020-09-03"
+        "release_date": "2020-09-03",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 737799,
@@ -254,7 +416,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//ysGikUSBjG3NRSyycHPf4rsIXQm.jpg",
         "title": "Maquis",
         "average_rating": 4.8,
-        "release_date": "2020-08-28"
+        "release_date": "2020-08-28",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 500840,
@@ -262,7 +430,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//x3NqAzuTWvnron4pXXyFGkyTFo7.jpg",
         "title": "I'm Thinking of Ending Things",
         "average_rating": 6,
-        "release_date": "2020-08-28"
+        "release_date": "2020-08-28",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 547017,
@@ -270,7 +444,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//97UR8xPpUNqpvx5zr7eyf4YSBCE.jpg",
         "title": "Shirley",
         "average_rating": 5.25,
-        "release_date": "2020-09-11"
+        "release_date": "2020-09-11",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 449924,
@@ -278,7 +458,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//hb3kjSQI0lwGUCIxnfAYec08VSq.jpg",
         "title": "Ip Man 4: The Finale",
         "average_rating": 6,
-        "release_date": "2019-12-19"
+        "release_date": "2019-12-19",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 425001,
@@ -286,7 +472,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//4gKyQ1McHa8ZKDsYoyKQSevF01J.jpg",
         "title": "The War with Grandpa",
         "average_rating": 5.666666666666667,
-        "release_date": "2020-01-31"
+        "release_date": "2020-01-31",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 582885,
@@ -294,7 +486,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//6j2g4fEAmjJqAclzprIpvz9Gaw4.jpg",
         "title": "Cuties",
         "average_rating": 3.5,
-        "release_date": "2020-08-19"
+        "release_date": "2020-08-19",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 659991,
@@ -302,7 +500,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//5nRyaVklxyA9OkxqZaPv1KBRqpd.jpg",
         "title": "Made in Italy",
         "average_rating": 5,
-        "release_date": "2020-08-06"
+        "release_date": "2020-08-06",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 501953,
@@ -310,7 +514,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//oeaLQKoPFQxvhEz3yyR1QuestXG.jpg",
         "title": "Eternal Beauty",
         "average_rating": 3,
-        "release_date": "2020-08-21"
+        "release_date": "2020-08-21",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       },
       {
         "id": 585244,
@@ -318,7 +528,13 @@ const movieData = {
         "backdrop_path": "https://image.tmdb.org/t/p/original//21Q8bzu10YF9i4O5amBkJBombYo.jpg",
         "title": "I Still Believe",
         "average_rating": 3.8333333333333335,
-        "release_date": "2020-03-12"
+        "release_date": "2020-03-12",
+        "overview": "Some overview that is full of buzzwords to attempt to entice you to watch this movie! Explosions! Drama! True love! Robots! A cute dog!",
+        "genres": ["Drama"],
+        "budget": 63000000,
+        "revenue": 100853753,
+        "runtime": 139,
+        "tagline": "It's a movie!"
       }
     ]
   };
