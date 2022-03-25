@@ -7,17 +7,18 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      movies: [ movieData ],
+      movies: movieData,
       error: ''
     }
   }
 
   render() {
-    return(
+    return( 
       <main>
-        <header>
+        <nav>
           <h1>Rancid Tomatillos</h1>
-        </header>
+        </nav>
+        <p className="sub-heading">The <em>second</em> most trusted measurer of movie quality!</p>
         <Movies 
           movieSet={this.state.movies}
         />

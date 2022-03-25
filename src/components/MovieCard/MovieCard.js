@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
+import './MovieCard.css';
 
-const MovieCard = ({ posterPath, title }) => {
+const MovieCard = ({ posterPath }) => {
     return (
-        <div>
-            <h3>{title}</h3>
+        <div >
             <img src={posterPath} alt="Movie poster"></img>
         </div>
     )
