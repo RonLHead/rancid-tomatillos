@@ -8,12 +8,18 @@ class App extends Component {
     super();
     this.state = {
       movies: movieData,
+      currentMovie: '',
       error: ''
     }
   }
 
   handleChange = (event) => {
     this.setState({search: event.target.value});
+  }
+
+  findSingleMovie = (id) => {
+    const singleMovie = this.state.movies.movies.find(movie => movie.id === id)
+    this.setState({currentMovie: singleMovie})
   }
 
   render() {
@@ -24,7 +30,7 @@ class App extends Component {
         </nav>
         <h2 className="sub-heading">The <em>second</em> most trusted measurer of movie quality!</h2>
         <Movies 
-          movieSet={this.state.movies}
+          movieSet={this.state.movies} findSingleMovie={this.findSingleMovie}
         />
       </main>
     )
