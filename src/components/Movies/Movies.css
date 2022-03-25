@@ -1,0 +1,5 @@
+.movies-container {
+    /* height: 80%;
+    overflow: scroll; */
+    background: radial-gradient(50% 50% at 50.02% 50%, #581355 0%, rgba(91, 19, 85, 0) 99.99%, rgba(88, 19, 85, 0) 100%);
+}
