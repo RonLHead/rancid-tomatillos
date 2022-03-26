@@ -14,7 +14,6 @@ div {
 }
 
 .card {
-    /* background-color: #F5F5F5; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +22,6 @@ div {
     margin: 10px;
     border-radius: 10px;
     overflow-wrap: break-word;
-    /* color: #15061D; */
 }
 
 .card:hover {
