@@ -29,7 +29,7 @@ class App extends Component {
   }
 
   findSingleMovie = (id) => {
-    const singleMovie = this.state.movies.movies.find(movie => movie.id === id)
+    const singleMovie = this.state.movies.find(movie => movie.id === id)
     this.setState({currentMovie: singleMovie})
   }
 
