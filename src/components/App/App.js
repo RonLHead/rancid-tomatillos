@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
 import Movies from '../Movies/Movies';
-import CurrentMovie from '../CurrentMovie/CurrentMovie'
-import movieData from '../../movies-data';
+import fetchMovies from '../../apiCalls.js';
+import CurrentMovie from '../CurrentMovie/CurrentMovie';
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      movies: movieData,
+      movies: [],
       currentMovie: '',
       error: ''
     }
+  }
+
+  componentDidMount = () => {
+    fetchMovies.allMovieData()
+      .then(data => this.setState({movies: data.movies}))
+      .catch(error => {
+        console.log(error)
+        this.setState({error: `${error}`})
+      })
   }
 
   handleChange = (event) => {
@@ -42,6 +52,9 @@ class App extends Component {
           <h1>Rancid Tomatillos</h1>
         </nav>
         <h2 className="sub-heading">The <em>second</em> most trusted measurer of movie quality!</h2>
+        {this.state.error && <h2 className="error-msg">{this.state.error}</h2>}
+        <Movies 
+          movieSet={this.state.movies}
         {display}
       </main>
     )
