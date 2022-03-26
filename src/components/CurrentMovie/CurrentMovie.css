@@ -1,0 +1,30 @@
+.current-movie {
+    display: flex;
+}
+
+.backdrop {
+    width: 60vw;
+    height: 50vh;
+}
+
+.title-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60vw
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-container {
+    display:flex;
+}
+
+.facts-container {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
