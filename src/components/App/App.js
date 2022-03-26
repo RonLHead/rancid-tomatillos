@@ -28,9 +28,9 @@ class App extends Component {
     this.setState({search: event.target.value});
   }
 
-  findSingleMovie = (id) => {
-    const singleMovie = this.state.movies.find(movie => movie.id === id)
-    this.setState({currentMovie: singleMovie})
+  findCurrentMovie = (id) => {
+    fetchMovies.currentMovieData(id)
+      .then(data => this.setState({currentMovie: data.movie}))
   }
 
   displayAllMovies = () => {
@@ -43,7 +43,7 @@ class App extends Component {
     if(this.state.currentMovie) {
       display = <CurrentMovie currentMovie={this.state.currentMovie} displayAllMovies={this.displayAllMovies}/>
     } else {
-      display = <Movies movieSet={this.state.movies} findSingleMovie={this.findSingleMovie} />
+      display = <Movies movieSet={this.state.movies} findCurrentMovie={this.findCurrentMovie} />
     }
 
     return( 
