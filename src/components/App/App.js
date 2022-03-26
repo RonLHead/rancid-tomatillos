@@ -24,18 +24,21 @@ class App extends Component {
   }
 
   render() {
+
+    let display;
+    if(this.state.currentMovie) {
+      display = <CurrentMovie currentMovie={this.state.currentMovie} />
+    } else {
+      display = <Movies movieSet={this.state.movies} findSingleMovie={this.findSingleMovie} />
+    }
+
     return( 
       <main>
         <nav>
           <h1>Rancid Tomatillos</h1>
         </nav>
         <h2 className="sub-heading">The <em>second</em> most trusted measurer of movie quality!</h2>
-        <Movies 
-          movieSet={this.state.movies} findSingleMovie={this.findSingleMovie}
-        />
-        <CurrentMovie 
-          currentMovie={this.state.currentMovie}
-        />
+        {display}
       </main>
     )
   }
