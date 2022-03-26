@@ -53,8 +53,6 @@ class App extends Component {
         </nav>
         <h2 className="sub-heading">The <em>second</em> most trusted measurer of movie quality!</h2>
         {this.state.error && <h2 className="error-msg">{this.state.error}</h2>}
-        <Movies 
-          movieSet={this.state.movies}
         {display}
       </main>
     )
