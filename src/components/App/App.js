@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Movies from '../Movies/Movies';
+import CurrentMovie from '../CurrentMovie/CurrentMovie'
 import movieData from '../../movies-data';
 
 class App extends Component {
@@ -31,6 +32,9 @@ class App extends Component {
         <h2 className="sub-heading">The <em>second</em> most trusted measurer of movie quality!</h2>
         <Movies 
           movieSet={this.state.movies} findSingleMovie={this.findSingleMovie}
+        />
+        <CurrentMovie 
+          currentMovie={this.state.currentMovie}
         />
       </main>
     )
