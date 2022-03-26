@@ -2,7 +2,7 @@ import React from 'react';
 import MovieCard from '../MovieCard/MovieCard';
 import './Movies.css';
 
-const Movies = ( {movieSet, findSingleMovie} ) => {
+const Movies = ( {movieSet, findCurrentMovie} ) => {
     const movies = movieSet
     const movieCards = movies.map(movie => {
         return (
@@ -14,12 +14,12 @@ const Movies = ( {movieSet, findSingleMovie} ) => {
                 backdropPath={movie.backdrop_path}
                 averageRating={movie.average_rating}
                 releaseDate={movie.release_date}
-                findSingleMovie={findSingleMovie}
                 tagline={movie.tagline}
                 runtime={movie.runtime}
                 overview={movie.overview}
                 budget={movie.budget}
                 revenue={movie.revenue}
+                findCurrentMovie={findCurrentMovie}
             />
         )
     })
