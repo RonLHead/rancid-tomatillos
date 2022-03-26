@@ -8,11 +8,17 @@ const fetchMovies = {
                     return response.json()
                 }
             })
+    },
+    currentMovieData(id){
+        return fetch(`https://rancid-tomatillos.herokuapp.com/api/v2/movies/${id}`)
+            .then(response => {
+                if(!response.ok) {
+                    throw new Error("Unable to retrieve data")
+                } else {
+                    return response.json()
+                }
+            })
     }
-    // ,
-    // singleMovieData(id) {
-        // fetch URL: movies/id
-    // }
 }
 
-export default fetchMovies;
+export default fetchMovies
