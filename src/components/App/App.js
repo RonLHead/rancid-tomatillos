@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import Movies from '../Movies/Movies';
+import fetchMovies from '../../apiCalls.js';
+import CurrentMovie from '../CurrentMovie/CurrentMovie';
 
-import fetchMovies from '../../apiCalls.js'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       movies: [],
+      currentMovie: '',
       error: ''
     }
   }
@@ -26,7 +28,24 @@ class App extends Component {
     this.setState({search: event.target.value});
   }
 
+  findSingleMovie = (id) => {
+    const singleMovie = this.state.movies.movies.find(movie => movie.id === id)
+    this.setState({currentMovie: singleMovie})
+  }
+
+  displayAllMovies = () => {
+    this.setState({currentMovie: ''})
+  }
+
   render() {
+
+    let display;
+    if(this.state.currentMovie) {
+      display = <CurrentMovie currentMovie={this.state.currentMovie} displayAllMovies={this.displayAllMovies}/>
+    } else {
+      display = <Movies movieSet={this.state.movies} findSingleMovie={this.findSingleMovie} />
+    }
+
     return( 
       <main>
         <nav>
@@ -36,7 +55,7 @@ class App extends Component {
         {this.state.error && <h2 className="error-msg">{this.state.error}</h2>}
         <Movies 
           movieSet={this.state.movies}
-        />
+        {display}
       </main>
     )
   }
