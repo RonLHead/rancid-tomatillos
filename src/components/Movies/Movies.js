@@ -15,6 +15,11 @@ const Movies = ( {movieSet, findSingleMovie} ) => {
                 averageRating={movie.average_rating}
                 releaseDate={movie.release_date}
                 findSingleMovie={findSingleMovie}
+                tagline={movie.tagline}
+                runtime={movie.runtime}
+                overview={movie.overview}
+                budget={movie.budget}
+                revenue={movie.revenue}
             />
         )
     })
