@@ -23,11 +23,15 @@ class App extends Component {
     this.setState({currentMovie: singleMovie})
   }
 
+  displayAllMovies = () => {
+    this.setState({currentMovie: ''})
+  }
+
   render() {
 
     let display;
     if(this.state.currentMovie) {
-      display = <CurrentMovie currentMovie={this.state.currentMovie} />
+      display = <CurrentMovie currentMovie={this.state.currentMovie} displayAllMovies={this.displayAllMovies}/>
     } else {
       display = <Movies movieSet={this.state.movies} findSingleMovie={this.findSingleMovie} />
     }
