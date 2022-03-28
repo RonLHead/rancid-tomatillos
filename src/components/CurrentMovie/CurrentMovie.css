@@ -2,26 +2,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .backdrop {
-    width: 40vw;
-    height: 35vh;
+    width: 80%;
+    height: 60%;
     padding: 0px;
     margin-bottom: 10px;
 }
 
 .current-poster {
-    width: 225px;
-    height: 380px;
+    width: 30%;
+    height: 100%;
     padding: 0px;
+    margin-right: 10px;
 }
 
 .title-container {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 40vw
+    width: 80%;
+    height: 40%;
 }
 
 .movie-info {
@@ -30,6 +33,8 @@
     align-items: center;
     border:solid #5B1122;
     border-radius: 10px;
+    width: 70%;
+    justify-content: flex-start;
 }
 
 .rating-container {
@@ -43,9 +48,35 @@
 }
 
 .movie-info p {
-    width: 30vw;
+    width: 90%;
 }
 
+.current-movie-title {
+    font-size: 40px;
+    background-color: #581355;
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.current-movie-stats {
+    width: 80%;
+    background-color: #9B332B;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.current-movie-wtk {
+    background-color: #581355;
+    width: 95%;
+    height: 45%;
+    border-radius: 10px;
+    /* margin-bottom: 10px; */
+}
 button {
     margin-top: 10px;
     font-size: 20px;
