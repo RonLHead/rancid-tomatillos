@@ -3,7 +3,7 @@ import MovieCard from '../MovieCard/MovieCard';
 import './Movies.css';
 
 const Movies = ( {movieSet, findCurrentMovie} ) => {
-    const movies = movieSet
+    const movies = movieSet;
     const movieCards = movies.map(movie => {
         return (
             <MovieCard 
