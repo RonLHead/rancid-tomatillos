@@ -17,7 +17,7 @@ const CurrentMovie = ({currentMovie, displayAllMovies}) => {
                     <div className="current-movie-stats">
                         <p>{currentMovie.tagline}</p>
                         <p>{movieYear[0]}, {movieGenres}, {currentMovie.runtime}m</p>
-                    <p>🍅 Average Rating: {currentMovie.average_rating}</p>
+                    <p>🍅 Average Rating: {currentMovie.average_rating.toFixed(0)}</p>
                     </div>
                     <div className="current-movie-wtk">
                         <h3>WHAT TO KNOW</h3>
