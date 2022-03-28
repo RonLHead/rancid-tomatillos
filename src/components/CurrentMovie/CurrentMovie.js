@@ -3,6 +3,7 @@ import './CurrentMovie.css'
 
 const CurrentMovie = ({currentMovie, displayAllMovies}) => {
     const movieYear = currentMovie.release_date.split('-');
+    const movieGenres = currentMovie.genres.join(', ');
 
     return (
         <div className="current-movie">
@@ -15,7 +16,7 @@ const CurrentMovie = ({currentMovie, displayAllMovies}) => {
                     <h3 className="current-movie-title">{currentMovie.title}</h3>
                     <div className="current-movie-stats">
                         <p>{currentMovie.tagline}</p>
-                        <p>{movieYear[0]}, {currentMovie.genres}, {currentMovie.runtime}m</p>
+                        <p>{movieYear[0]}, {movieGenres}, {currentMovie.runtime}m</p>
                     <p>🍅 Average Rating: {currentMovie.average_rating}</p>
                     </div>
                     <div className="current-movie-wtk">
