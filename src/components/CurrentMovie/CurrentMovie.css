@@ -31,10 +31,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:solid #5B1122;
     border-radius: 10px;
     width: 70%;
     justify-content: flex-start;
+    background: #F5F5F5
 }
 
 .rating-container {
@@ -60,22 +60,25 @@
     border-radius: 10px;
     margin-top: 2%;
     margin-bottom: 20px;
+    box-shadow: 4px 4px 10px darkgray;
 }
 
 .current-movie-stats {
-    width: 80%;
+    width: 90%;
     background-color: #9B332B;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px;
+    box-shadow: 4px 4px 10px darkgray;
 }
 
 .current-movie-wtk {
     background-color: #581355;
-    width: 95%;
+    width: 93%;
     height: 50%;
     border-radius: 10px;
     margin-bottom: 2%;
+    box-shadow: 4px 4px 10px darkgray;
 }
 button {
     margin-top: 10px;
