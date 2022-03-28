@@ -58,8 +58,8 @@
     text-align: center;
     padding: 10px;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 2%;
+    margin-bottom: 20px;
 }
 
 .current-movie-stats {
@@ -67,7 +67,7 @@
     background-color: #9B332B;
     border-radius: 10px;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .current-movie-wtk {
@@ -75,7 +75,7 @@
     width: 95%;
     height: 50%;
     border-radius: 10px;
-    /* margin-bottom: 10px; */
+    margin-bottom: 2%;
 }
 button {
     margin-top: 10px;
