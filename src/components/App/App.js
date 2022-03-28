@@ -31,6 +31,10 @@ class App extends Component {
   findCurrentMovie = (id) => {
     fetchMovies.currentMovieData(id)
       .then(data => this.setState({currentMovie: data.movie}))
+      .catch(error => {
+        console.log(error)
+        this.setState({error: `${error}`})
+      })
   }
 
   displayAllMovies = () => {
@@ -42,6 +46,8 @@ class App extends Component {
     let display;
     if(this.state.currentMovie) {
       display = <CurrentMovie currentMovie={this.state.currentMovie} displayAllMovies={this.displayAllMovies}/>
+    } else if(!this.state.currentMovie && this.state.error) {
+      display = <p>{this.state.error}</p>
     } else {
       display = <Movies movieSet={this.state.movies} findCurrentMovie={this.findCurrentMovie} />
     }
