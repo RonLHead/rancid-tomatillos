@@ -22,8 +22,8 @@ const CurrentMovie = ({currentMovie, displayAllMovies}) => {
                     <div className="current-movie-wtk">
                         <h3>WHAT TO KNOW</h3>
                         <p>{currentMovie.overview}</p>
-                        <p>Budget: ${currentMovie.budget}</p>
-                        <p>Revenue: ${currentMovie.revenue}</p>
+                        <p>Budget: {new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(currentMovie.budget)}</p>
+                        <p>Revenue: {new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(currentMovie.revenue)}</p>
                     </div>
                 </div>
             </div>
