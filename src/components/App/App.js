@@ -25,34 +25,15 @@ class App extends Component {
       })
   }
 
-  handleChange = (event) => {
-    this.setState({search: event.target.value});
-  }
-
-  findCurrentMovie = (id) => {
-    fetchMovies.currentMovieData(id)
-      .then(data => this.setState({currentMovie: data.movie}))
-      .catch(error => {
-        console.log(error)
-        this.setState({error: `${error}`})
-      })
-  }
+  // handleChange = (event) => {
+  //   this.setState({search: event.target.value});
+  // }
 
   displayAllMovies = () => {
     this.setState({currentMovie: ''})
   }
 
   render() {
-
-    let display;
-    if(this.state.currentMovie) {
-      display = <CurrentMovie currentMovie={this.state.currentMovie} displayAllMovies={this.displayAllMovies}/>
-    } else if(!this.state.currentMovie && this.state.error) {
-      display = <p>{this.state.error}</p>
-    // } else {
-    //   display = <Movies movieSet={this.state.movies} findCurrentMovie={this.findCurrentMovie} />
-    }
-
     return( 
       <main>
         <nav>
@@ -60,10 +41,16 @@ class App extends Component {
         </nav>
         <h2 className="sub-heading">The <em>second</em> most trusted measurer of movie quality!</h2>
         {this.state.error && <h2 className="error-msg">{this.state.error}</h2>}
-        {/* {display} */}
         <Route
           exact path="/"
-          render={() => <Movies movieSet={this.state.movies} findCurrentMovie={this.findCurrentMovie}/>}
+          render={() => <Movies movieSet={this.state.movies}/>}
+        />
+        <Route 
+          exact path="/:id" 
+          render={({ match }) => {
+            const movie = this.state.movies.find(film => film.id === parseInt(match.params.id))
+            return <CurrentMovie currentMovie={movie}/>
+          }}
         />
       </main>
     )
