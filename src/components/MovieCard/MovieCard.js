@@ -1,14 +1,17 @@
 import React from 'react';
 import './MovieCard.css';
+import { Link } from 'react-router-dom'
 
-const MovieCard = ({ title, posterPath, findCurrentMovie, id }) => {
+const MovieCard = ({ title, posterPath, id }) => {
     return (
-        <div>
-            <div className="card">
-                <img src={posterPath} alt="Movie poster" onClick={() =>  findCurrentMovie(id)}></img>
-                <p>{title}</p>
+        <Link to={`/${id}`}>
+            <div>
+                <div className="card">
+                    <img src={posterPath} alt="Movie poster" id={id} key={id}></img>
+                    <p>{title}</p>
+                </div>
             </div>
-        </div>
+        </Link>
     )
 }
 
