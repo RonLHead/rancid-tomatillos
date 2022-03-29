@@ -34,7 +34,8 @@
     border-radius: 10px;
     width: 70%;
     justify-content: flex-start;
-    background: #F5F5F5
+    background: #F5F5F5;
+    height: 100%;
 }
 
 .rating-container {
@@ -59,7 +60,7 @@
     padding: 10px;
     border-radius: 10px;
     margin-top: 2%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     box-shadow: 4px 4px 10px darkgray;
 }
 
@@ -67,8 +68,8 @@
     width: 90%;
     background-color: #9B332B;
     border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 9px;
+    margin-bottom: 15px;
     box-shadow: 4px 4px 10px darkgray;
 }
 
