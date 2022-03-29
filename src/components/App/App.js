@@ -3,6 +3,7 @@ import './App.css';
 import Movies from '../Movies/Movies';
 import fetchMovies from '../../apiCalls.js';
 import CurrentMovie from '../CurrentMovie/CurrentMovie';
+import { Route } from 'react-router-dom';
 
 
 class App extends Component {
@@ -48,8 +49,8 @@ class App extends Component {
       display = <CurrentMovie currentMovie={this.state.currentMovie} displayAllMovies={this.displayAllMovies}/>
     } else if(!this.state.currentMovie && this.state.error) {
       display = <p>{this.state.error}</p>
-    } else {
-      display = <Movies movieSet={this.state.movies} findCurrentMovie={this.findCurrentMovie} />
+    // } else {
+    //   display = <Movies movieSet={this.state.movies} findCurrentMovie={this.findCurrentMovie} />
     }
 
     return( 
@@ -59,7 +60,11 @@ class App extends Component {
         </nav>
         <h2 className="sub-heading">The <em>second</em> most trusted measurer of movie quality!</h2>
         {this.state.error && <h2 className="error-msg">{this.state.error}</h2>}
-        {display}
+        {/* {display} */}
+        <Route
+          exact path="/"
+          render={() => <Movies movieSet={this.state.movies} findCurrentMovie={this.findCurrentMovie}/>}
+        />
       </main>
     )
   }
