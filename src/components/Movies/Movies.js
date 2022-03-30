@@ -2,7 +2,7 @@ import React from 'react';
 import MovieCard from '../MovieCard/MovieCard';
 import './Movies.css';
 
-const Movies = ( {movieSet} ) => {
+const Movies = ( {movieSet, findCurrentMovie} ) => {
     const movies = movieSet;
     const movieCards = movies.map(movie => {
         return (
@@ -19,6 +19,7 @@ const Movies = ( {movieSet} ) => {
                 overview={movie.overview}
                 budget={movie.budget}
                 revenue={movie.revenue}
+                findCurrentMovie={findCurrentMovie}
             />
         )
     })
