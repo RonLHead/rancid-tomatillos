@@ -11,23 +11,24 @@ class App extends Component {
     super();
     this.state = {
       movies: [],
-      currentMovie: '',
       error: ''
     }
   }
 
-  componentDidMount = () => {
-    fetchMovies.allMovieData()
-      .then(data => this.setState({movies: data.movies}))
-      .catch(error => {
-        console.log(error)
-        this.setState({error: `${error}`})
-      })
+  fetchAllMovies = () => {
+    fetchMovies.getMovieData('https://rancid-tomatillos.herokuapp.com/api/v2/movies')
+    .then(data => this.setState({movies: data.movies}))
+    .catch(error => {
+      console.log(error)
+      this.setState({error: `${error}`})
+    })
   }
 
-  // handleChange = (event) => {
-  //   this.setState({search: event.target.value});
-  // }
+  componentDidMount = () => this.fetchAllMovies()
+
+  handleChange = (event) => {
+    this.setState({search: event.target.value});
+  }
 
   displayAllMovies = () => {
     this.setState({currentMovie: ''})
@@ -43,14 +44,11 @@ class App extends Component {
         {this.state.error && <h2 className="error-msg">{this.state.error}</h2>}
         <Route
           exact path="/"
-          render={() => <Movies movieSet={this.state.movies}/>}
+          render={() => <Movies movieSet={this.state.movies} />}
         />
         <Route 
           exact path="/:id" 
-          render={({ match }) => {
-            const movie = this.state.movies.find(film => film.id === parseInt(match.params.id))
-            return <CurrentMovie currentMovie={movie}/>
-          }}
+          render={({match}) => <CurrentMovie id={match.params.id} />} 
         />
       </main>
     )
