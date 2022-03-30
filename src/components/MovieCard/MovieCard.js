@@ -2,16 +2,16 @@ import React from 'react';
 import './MovieCard.css';
 import { Link } from 'react-router-dom'
 
-const MovieCard = ({ title, posterPath, id }) => {
+const MovieCard = ({ title, posterPath, findCurrentMovie, id }) => {
     return (
-        <Link to={`/${id}`}>
-            <div>
-                <div className="card">
-                    <img src={posterPath} alt="Movie poster" id={id} key={id}></img>
-                    <p>{title}</p>
-                </div>
+        <div>
+            <div className="card">
+                <Link to={`/${id}`}>
+                <img src={posterPath} alt="Movie poster" id={id} key={id}></img>
+                </Link>
+                <p>{title}</p>
             </div>
-        </Link>
+        </div>
     )
 }
 
