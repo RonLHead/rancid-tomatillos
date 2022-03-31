@@ -16,6 +16,7 @@ describe('Movies homepage flow', () => {
             .get('img[id=718444]').click()
                 .url()
                     .should('include', '/718444')
+        
     })
 })
 

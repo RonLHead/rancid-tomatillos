@@ -1,5 +1,11 @@
+import currentMovieTestData from './current_movie_test_data';
+import moviesTestData from './movies_test_data';
+
 describe('Current movie flow happy path', () => {
     it('Should be able to visit the movie page for Money Plane and render the correct elements', () => {
+        cy.intercept('GET', 'https://rancid-tomatillos.herokuapp.com/api/v2/movies', moviesTestData)
+        cy.visit('http://localhost:3000')
+        cy.intercept('GET', 'https://rancid-tomatillos.herokuapp.com/api/v2/movies/718444', currentMovieTestData)
         cy.visit('http://localhost:3000/718444')
             .contains('Rancid Tomatillos')
             .get('h2')
