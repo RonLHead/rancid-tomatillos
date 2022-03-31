@@ -4,6 +4,7 @@ import Movies from '../Movies/Movies';
 import fetchMovies from '../../apiCalls.js';
 import CurrentMovie from '../CurrentMovie/CurrentMovie';
 import { Route } from 'react-router-dom';
+import ErrorHandling from '../ErrorHandling/ErrorHandling';
 
 
 class App extends Component {
@@ -41,7 +42,11 @@ class App extends Component {
           <h1>Rancid Tomatillos</h1>
         </nav>
         <h2 className="sub-heading">The <em>second</em> most trusted measurer of movie quality!</h2>
-        {this.state.error && <h2 className="error-msg">{this.state.error}</h2>}
+        {this.state.error && (
+          <ErrorHandling 
+            error={this.state.error}
+          />
+        )}
         <Route
           exact path="/"
           render={() => <Movies movieSet={this.state.movies} />}
