@@ -10,9 +10,11 @@ describe('Movies homepage flow happy path', () => {
                 .should('be.visible')
             .get('p')
                 .should('be.visible')
+            .get('img[id=718444]').click()
+                .url()
+                    .should('include', '/718444')
     })
 })
-
 
 
 
