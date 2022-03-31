@@ -1,4 +1,4 @@
-describe('Movies homepage flow', () => {
+describe('Movies homepage flow happy path', () => {
     it('Should be able to visit the page and render the correct elements', () => {
         cy.visit('http://localhost:3000')
             .contains('Rancid Tomatillos')
@@ -6,7 +6,13 @@ describe('Movies homepage flow', () => {
                 .contains('The second most trusted measurer of movie quality!')
             .get('div')
                 .should('have.class', 'movies-container')
+            .get('img')
+                .should('be.visible')
+            .get('p')
+                .should('be.visible')
     })
 })
+
+
 
 
