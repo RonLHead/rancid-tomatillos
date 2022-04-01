@@ -27,14 +27,6 @@ class App extends Component {
 
   componentDidMount = () => this.fetchAllMovies()
 
-  handleChange = (event) => {
-    this.setState({search: event.target.value});
-  }
-
-  displayAllMovies = () => {
-    this.setState({currentMovie: ''})
-  }
-
   render() {
     return( 
       <main>
