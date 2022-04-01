@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import fetchMovies from '../../apiCalls.js';
-import './CurrentMovie.css'
-import { NavLink } from 'react-router-dom'
+import './CurrentMovie.css';
+import { NavLink } from 'react-router-dom';
 import ErrorHandling from '../ErrorHandling/ErrorHandling.js';
 
 class CurrentMovie extends Component {
@@ -58,12 +58,15 @@ class CurrentMovie extends Component {
                 </NavLink>
             </div>
         )
-
         }
         
         return (
             <div>
-                {this.state.error && <ErrorHandling error={this.state.error}/>}
+                {this.state.error && (
+                    <ErrorHandling
+                      error={this.state.error}
+                    />
+                )}
                 {currentMovieDetails}
             </div>
         )
