@@ -25,6 +25,6 @@ const moviesTestData = {
         "release_date": "2020-08-20"
       }
     ]
-}
+};
 
 export default moviesTestData;

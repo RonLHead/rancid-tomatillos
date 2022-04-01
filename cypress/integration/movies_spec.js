@@ -17,7 +17,7 @@ describe('Movies homepage flow', () => {
                 .url()
                     .should('include', '/718444')
         
-    })
+    });
 
     it("Should be able to display an error message if the movies data isn't fetched properly", () => {
         cy.intercept('GET', 'https://rancid-tomatillos.herokuapp.com/api/v2/movies', {forceNetworkError: true})
@@ -30,8 +30,8 @@ describe('Movies homepage flow', () => {
                 .should('have.class', 'movies-container')
                 .contains('TypeError: Failed to fetch')
 
-    })
-})
+    });
+});
 
 
 

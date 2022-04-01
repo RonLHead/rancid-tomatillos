@@ -3,10 +3,9 @@ import MovieCard from '../MovieCard/MovieCard';
 import './Movies.css';
 
 const Movies = ( {movieSet, findCurrentMovie} ) => {
-    const movies = movieSet;
     let movieCards;
-    if(movies) {
-        movieCards = movies.map(movie => {
+    if(movieSet) {
+        movieCards = movieSet.map(movie => {
             return (
                 <MovieCard 
                     id={movie.id}
@@ -34,4 +33,4 @@ const Movies = ( {movieSet, findCurrentMovie} ) => {
     )
 }
 
-export default Movies
+export default Movies;
