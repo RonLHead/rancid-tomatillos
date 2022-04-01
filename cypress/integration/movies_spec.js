@@ -29,8 +29,7 @@ describe('Movies homepage flow', () => {
             .get('div')
                 .should('have.class', 'movies-container')
                 .contains('TypeError: Failed to fetch')
-                
-        
+
     })
 })
 

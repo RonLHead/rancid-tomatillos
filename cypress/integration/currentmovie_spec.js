@@ -1,7 +1,7 @@
-import currentMovieTestData from './current_movie_test_data';
+import {currentMovieTestData, currentMovieTestDataSad} from './current_movie_test_data';
 import moviesTestData from './movies_test_data';
 
-describe('Current movie flow happy path', () => {
+describe('Current movie flow', () => {
     it('Should be able to visit the movie page for Money Plane and render the correct elements', () => {
         cy.intercept('GET', 'https://rancid-tomatillos.herokuapp.com/api/v2/movies', moviesTestData)
         cy.visit('http://localhost:3000')
@@ -45,4 +45,35 @@ describe('Current movie flow happy path', () => {
             .get('button')
                 .contains('Back').click()
     })
+
+    it("Should be able to te alt-image if the current movie's poster images are missing", () => {
+        cy.intercept('GET', 'https://rancid-tomatillos.herokuapp.com/api/v2/movies/718444', currentMovieTestDataSad)
+        cy.visit('http://localhost:3000/718444')
+            .contains('Rancid Tomatillos')
+            .get('h2')
+                .should('have.class', 'sub-heading')
+                .contains('The second most trusted measurer of movie quality!')
+            .get('img')
+                .should('have.class', 'backdrop')
+                .and(($img) => {
+                    expect($img[0].naturalWidth).to.equal(0)
+                })
+            .get('img')    
+                .should('have.class', 'current-poster')
+                .and(($img) => {
+                    expect($img[1].naturalWidth).to.equal(0)
+                })
+    })
+
+    it("Should be able to display an error message if the movies data isn't fetched properly", () => {
+        cy.intercept('GET', 'https://rancid-tomatillos.herokuapp.com/api/v2/movies/718444', {forceNetworkError: true})
+        cy.visit('http://localhost:3000/718444')
+            .contains('Rancid Tomatillos')
+            .get('h2')
+                .should('have.class', 'sub-heading')
+                .contains('The second most trusted measurer of movie quality!')
+            .get('div')
+                .contains('TypeError: Failed to fetch')
+    })
+
 })
