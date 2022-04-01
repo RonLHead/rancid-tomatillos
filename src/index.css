@@ -21,14 +21,11 @@ code {
 }
 
 nav {
-  /* position: fixed; */
   background-color: #15061D;
   width: 100vw;
-  /* margin-bottom: 10px; */
 }
 
 h1 {
-  
   font-size: 50px;
   margin-left: 20px;
 }
