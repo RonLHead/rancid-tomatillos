@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import fetchMovies from '../../apiCalls.js';
 import './CurrentMovie.css'
 import { NavLink } from 'react-router-dom'
+import ErrorHandling from '../ErrorHandling/ErrorHandling.js';
 
 class CurrentMovie extends Component {
     constructor (props) {
@@ -33,6 +34,7 @@ class CurrentMovie extends Component {
 
         currentMovieDetails = (
             <div className="current-movie">
+                
                 <img className="backdrop" src={this.state.currentMovie.backdrop_path} alt="Backdrop image"></img>
                 <div className="title-container">
                     <img className="current-poster" src={this.state.currentMovie.poster_path} alt="Poster image"></img>  
@@ -61,6 +63,7 @@ class CurrentMovie extends Component {
         
         return (
             <div>
+                {this.state.error && <ErrorHandling error={this.state.error}/>}
                 {currentMovieDetails}
             </div>
         )

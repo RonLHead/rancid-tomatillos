@@ -4,25 +4,29 @@ import './Movies.css';
 
 const Movies = ( {movieSet, findCurrentMovie} ) => {
     const movies = movieSet;
-    const movieCards = movies.map(movie => {
-        return (
-            <MovieCard 
-                id={movie.id}
-                key={movie.id}
-                title={movie.title}
-                posterPath={movie.poster_path}
-                backdropPath={movie.backdrop_path}
-                averageRating={movie.average_rating}
-                releaseDate={movie.release_date}
-                tagline={movie.tagline}
-                runtime={movie.runtime}
-                overview={movie.overview}
-                budget={movie.budget}
-                revenue={movie.revenue}
-                findCurrentMovie={findCurrentMovie}
-            />
-        )
-    })
+    let movieCards;
+    if(movies) {
+        movieCards = movies.map(movie => {
+            return (
+                <MovieCard 
+                    id={movie.id}
+                    key={movie.id}
+                    title={movie.title}
+                    posterPath={movie.poster_path}
+                    backdropPath={movie.backdrop_path}
+                    averageRating={movie.average_rating}
+                    releaseDate={movie.release_date}
+                    tagline={movie.tagline}
+                    runtime={movie.runtime}
+                    overview={movie.overview}
+                    budget={movie.budget}
+                    revenue={movie.revenue}
+                    findCurrentMovie={findCurrentMovie}
+                />
+            )
+        })
+    }
+    
     return (
         <div className="movies-container">
             {movieCards}
