@@ -1,4 +1,4 @@
-import {currentMovieTestData, currentMovieTestDataSad} from './current_movie_test_data';
+import {currentMovieTestData, currentMovieTestDataSad} from './;current_movie_test_data';
 import moviesTestData from './movies_test_data';
 
 describe('Current movie flow', () => {
@@ -44,7 +44,7 @@ describe('Current movie flow', () => {
                 .contains('Revenue: $0.00')
             .get('button')
                 .contains('Back').click()
-    })
+    });
 
     it("Should be able to te alt-image if the current movie's poster images are missing", () => {
         cy.intercept('GET', 'https://rancid-tomatillos.herokuapp.com/api/v2/movies/718444', currentMovieTestDataSad)
@@ -63,7 +63,7 @@ describe('Current movie flow', () => {
                 .and(($img) => {
                     expect($img[1].naturalWidth).to.equal(0)
                 })
-    })
+    });
 
     it("Should be able to display an error message if the movies data isn't fetched properly", () => {
         cy.intercept('GET', 'https://rancid-tomatillos.herokuapp.com/api/v2/movies/718444', {forceNetworkError: true})
@@ -74,6 +74,6 @@ describe('Current movie flow', () => {
                 .contains('The second most trusted measurer of movie quality!')
             .get('div')
                 .contains('TypeError: Failed to fetch')
-    })
+    });
 
-})
+});
