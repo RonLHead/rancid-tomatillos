@@ -35,6 +35,9 @@ class CurrentMovie extends Component {
         currentMovieDetails = (
             <div className="current-movie">
                 
+                <NavLink to="/">
+                    <button>Back</button>
+                </NavLink>
                 <img className="backdrop" src={this.state.currentMovie.backdrop_path} alt="Backdrop image"></img>
                 <div className="title-container">
                     <img className="current-poster" src={this.state.currentMovie.poster_path} alt="Poster image"></img>  
@@ -53,9 +56,6 @@ class CurrentMovie extends Component {
                         </div>
                     </div>
                 </div>
-                <NavLink to="/">
-                    <button>Back</button>
-                </NavLink>
             </div>
         )
         }
