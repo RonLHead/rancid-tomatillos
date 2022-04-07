@@ -1,4 +1,4 @@
-import {currentMovieTestData, currentMovieTestDataSad} from './;current_movie_test_data';
+import {currentMovieTestData, currentMovieTestDataSad} from './current_movie_test_data';
 import moviesTestData from './movies_test_data';
 
 describe('Current movie flow', () => {

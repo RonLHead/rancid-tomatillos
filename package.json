@@ -13,6 +13,22 @@
     "cypress": "^9.5.3"
   },
   "scripts": {
-    "cypress": "./node_modules/.bin/cypress open"  
+    "build": "react-scripts build",
+    "cypress": "./node_modules/.bin/cypress open",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
